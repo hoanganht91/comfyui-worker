@@ -6,7 +6,7 @@
 .env.production.local
 
 # NOTE: This is a runtime directory for direct execution
-# dist/, shared/, and node_modules/ are REQUIRED and should be committed
+# dist/ directory is REQUIRED and should be committed
 
 # Runtime logs (generated during execution)
 logs/
