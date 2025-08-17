@@ -14,9 +14,7 @@ if ! command -v nvm &> /dev/null; then
   npm install -g pm2
 fi
 
-if [ -d "/workspace/comfyui-worker" ]; then
-  cd /workspace/comfyui-worker
-fi
-
+CURRENT_DIR="$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)"
+cd $CURRENT_DIR
 pm2 start ./dist/index.js --name comfyui-worker
 pm2 save
