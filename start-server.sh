@@ -1,6 +1,9 @@
 #!/bin/bash
 set -e
 
+apt-get update
+apt-get install -y nano
+
 CURRENT_DIR="$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)"
 cd $CURRENT_DIR
 
